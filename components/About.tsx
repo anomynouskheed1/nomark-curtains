@@ -61,7 +61,7 @@ export default function About() {
 
                             <div>
                                 <h4 className="text-3xl font-bold text-[#D4AF37]">
-                                    500+
+                                    100+
                                 </h4>
                                 <p className="text-gray-600 text-sm mt-1">
                                     Projects Completed
