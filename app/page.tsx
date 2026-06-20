@@ -1,27 +1,40 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Services from "@/components/Services";
-import Products from "@/components/Products";
+import ShopCurtains from "@/components/ShopCurtains";
+import Collections from "@/components/Collections";
+import Projects from "@/components/Projects";
 import About from "@/components/About";
-import Gallery from "@/components/Gallery";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
-import WhatsAppButton from "@/components/WhatsAppButton";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function Home() {
   return (
     <>
       <Navbar />
+
       <Hero />
-      <Services />
-      <Products />
+
+      {/* MONEY SECTION 💰 */}
+      <ShopCurtains />
+
+      {/* INSPIRATION */}
+      <Collections />
+
+      {/* TRUST / PROOF */}
+      <Projects />
       <About />
-      <Gallery />
+
+      {/* SOCIAL PROOF */}
       <Testimonials />
+
+      {/* ACTION */}
       <Contact />
-      <WhatsAppButton />
+
       <Footer />
+
+      <WhatsAppButton />
     </>
   );
 }

@@ -1,6 +1,6 @@
 export default function Testimonials() {
     return (
-        <section className="py-24 bg-white">
+        <section id="testimonials" className="py-24 bg-white">
             <div className="max-w-6xl mx-auto px-6 text-center">
 
                 <h2 className="text-4xl font-bold text-[#0A1A35] mb-4">
@@ -19,7 +19,7 @@ export default function Testimonials() {
                             “The curtains were fitted well and the team came on time. My living room looks much better now.”
                         </p>
                         <h4 className="mt-4 font-semibold text-[#0A1A35]">
-                            — Mary
+                            —
                         </h4>
                     </div>
 
@@ -28,7 +28,7 @@ export default function Testimonials() {
                             “Good service and the material quality was exactly what I ordered. No issues at all.”
                         </p>
                         <h4 className="mt-4 font-semibold text-[#0A1A35]">
-                            —  Mwangi
+                            —
                         </h4>
                     </div>
 
@@ -37,7 +37,7 @@ export default function Testimonials() {
                             “They installed everything quickly and the finish looks very neat. I'm satisfied.”
                         </p>
                         <h4 className="mt-4 font-semibold text-[#0A1A35]">
-                            — Brian
+                            —
                         </h4>
                     </div>
 
@@ -51,7 +51,7 @@ export default function Testimonials() {
                             “I liked how they guided me on fabric choice. The result matched my house perfectly.”
                         </p>
                         <h4 className="mt-4 font-semibold text-[#0A1A35]">
-                            — Akinyi
+                            —
                         </h4>
                     </div>
 
@@ -60,7 +60,7 @@ export default function Testimonials() {
                             “Affordable pricing and quick installation. I would definitely recommend them.”
                         </p>
                         <h4 className="mt-4 font-semibold text-[#0A1A35]">
-                            — Peter Kimani
+                            —
                         </h4>
                     </div>
 

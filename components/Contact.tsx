@@ -2,52 +2,60 @@
 
 export default function Contact() {
     return (
-        <section id="contact" className="py-24 bg-[#0A1A35] text-white">
+        <section id="contact" className="py-24 bg-gradient-to-b from-[#071428] to-[#0A1A35] text-white">
             <div className="max-w-6xl mx-auto px-6">
 
                 {/* HEADER */}
-                <div className="text-center mb-14">
-                    <h2 className="text-4xl font-bold">
-                        Get Your Free Quote
+                <div className="text-center mb-16">
+                    <h2 className="text-4xl md:text-5xl font-semibold tracking-tight">
+                        Let’s Design Your Perfect Curtains
                     </h2>
 
-                    <p className="text-gray-300 mt-4 max-w-2xl mx-auto">
-                        Contact us for curtain measurements, installation, and pricing. We respond quickly on WhatsApp.
+                    <p className="text-gray-300 mt-5 max-w-2xl mx-auto leading-relaxed">
+                        Share your space details and we’ll help you choose the perfect curtains,
+                        take measurements, and give you a fast quotation via WhatsApp.
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-12 items-start">
+                <div className="grid md:grid-cols-2 gap-14 items-start">
 
-                    {/* LEFT SIDE - INFO */}
-                    <div className="space-y-6">
+                    {/* LEFT SIDE */}
+                    <div className="space-y-8">
 
-                        <h3 className="text-xl font-semibold text-[#D4AF37]">
-                            Contact Details
-                        </h3>
+                        <div>
+                            <h3 className="text-sm uppercase tracking-widest text-[#D4AF37] mb-4">
+                                Contact Information
+                            </h3>
 
-                        <div className="space-y-3 text-gray-300 text-sm">
+                            <div className="space-y-4 text-gray-300">
 
-                            <p> Nairobi, Kenya</p>
+                                <div className="flex items-start gap-3">
+                                    <span className="w-2 h-2 mt-2 bg-[#D4AF37] rounded-full"></span>
+                                    <p>Nairobi, Kenya</p>
+                                </div>
 
-                            <p> 0724 174 801</p>
+                                <div className="flex items-start gap-3">
+                                    <span className="w-2 h-2 mt-2 bg-[#D4AF37] rounded-full"></span>
+                                    <p>0724 174 801</p>
+                                </div>
 
-                            <p className="flex items-center gap-2">
+                                <div className="flex items-start gap-3">
+                                    <span className="w-2 h-2 mt-2 bg-[#D4AF37] rounded-full"></span>
+                                    <a
+                                        href="mailto:millionest1999@gmail.com"
+                                        className="hover:text-[#D4AF37] transition"
+                                    >
+                                        millionest1999@gmail.com
+                                    </a>
+                                </div>
 
-                                <a
-                                    href="mailto:millionest1999@gmail.com"
-                                    className="hover:text-[#D4AF37] transition underline underline-offset-2"
-                                >
-                                    millionest1999@gmail.com
-                                </a>
-                            </p>
-
-
+                            </div>
                         </div>
 
                         <a
                             href="https://wa.me/254724174801"
                             target="_blank"
-                            className="inline-block mt-4 bg-[#D4AF37] text-black px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition"
+                            className="inline-flex items-center justify-center bg-[#D4AF37] text-black px-6 py-3 rounded-full font-medium hover:opacity-90 transition shadow-md"
                         >
                             Chat on WhatsApp
                         </a>
@@ -55,45 +63,45 @@ export default function Contact() {
                     </div>
 
                     {/* RIGHT SIDE - FORM */}
-                    <div className="bg-white text-black p-6 md:p-8 rounded-2xl shadow-lg">
+                    <div className="bg-white text-black p-8 rounded-3xl shadow-xl">
 
                         <h3 className="text-lg font-semibold text-[#0A1A35] mb-6">
                             Request a Quote
                         </h3>
 
-                        <div className="space-y-4">
+                        <div className="space-y-5">
 
                             <input
                                 type="text"
-                                placeholder="Your Name"
-                                className="w-full p-3 border rounded-lg outline-none focus:ring-2 focus:ring-[#D4AF37]"
+                                placeholder="Full Name"
+                                className="w-full p-3 border border-gray-200 rounded-xl outline-none focus:ring-2 focus:ring-[#D4AF37] transition"
                             />
 
                             <input
                                 type="text"
                                 placeholder="Phone Number"
-                                className="w-full p-3 border rounded-lg outline-none focus:ring-2 focus:ring-[#D4AF37]"
+                                className="w-full p-3 border border-gray-200 rounded-xl outline-none focus:ring-2 focus:ring-[#D4AF37] transition"
                             />
 
                             <input
                                 type="text"
-                                placeholder="Location"
-                                className="w-full p-3 border rounded-lg outline-none focus:ring-2 focus:ring-[#D4AF37]"
+                                placeholder="Location (e.g. Nairobi, Westlands)"
+                                className="w-full p-3 border border-gray-200 rounded-xl outline-none focus:ring-2 focus:ring-[#D4AF37] transition"
                             />
 
                             <textarea
-                                placeholder="Tell us what you need..."
-                                className="w-full p-3 border rounded-lg h-32 outline-none focus:ring-2 focus:ring-[#D4AF37]"
-                            ></textarea>
+                                placeholder="Describe your curtain style or room..."
+                                className="w-full p-3 border border-gray-200 rounded-xl h-32 outline-none focus:ring-2 focus:ring-[#D4AF37] transition"
+                            />
 
                             <button
                                 type="button"
                                 onClick={() =>
                                     window.open("https://wa.me/254724174801", "_blank")
                                 }
-                                className="w-full bg-[#D4AF37] text-black py-3 rounded-lg font-semibold hover:scale-[1.02] transition"
+                                className="w-full bg-[#D4AF37] text-black py-3 rounded-xl font-semibold hover:scale-[1.02] transition shadow-md"
                             >
-                                Send via WhatsApp
+                                Send Request via WhatsApp
                             </button>
 
                         </div>
