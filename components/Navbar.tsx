@@ -91,7 +91,7 @@ export default function Navbar() {
                             <FaEnvelope className="text-[#D4AF37]" />
                             <div>
                                 <p className="font-semibold text-[#0A1A35]">Email</p>
-                                <p className="text-gray-600">millionest1999@gmail.com</p>
+                                <p className="text-gray-600">calicawaale280@gmail.com</p>
                             </div>
                         </div>
 

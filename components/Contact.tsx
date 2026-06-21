@@ -42,10 +42,10 @@ export default function Contact() {
                                 <div className="flex items-start gap-3">
                                     <span className="w-2 h-2 mt-2 bg-[#D4AF37] rounded-full"></span>
                                     <a
-                                        href="mailto:millionest1999@gmail.com"
+                                        href="mailto:calicawaale280@gmail.com"
                                         className="hover:text-[#D4AF37] transition"
                                     >
-                                        millionest1999@gmail.com
+                                        calicawaale280@gmail.com
                                     </a>
                                 </div>
 
