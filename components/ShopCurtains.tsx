@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 export default function ShopCurtains() {
-    const [selectedProduct, setSelectedProduct] = useState(null);
+    const [selectedProduct, setSelectedProduct] = useState<any>(null);
 
     const products = [
         {
@@ -189,11 +189,10 @@ function ProductModal({ product, onClose }) {
                                 <button
                                     key={idx}
                                     onClick={() => setSelectedImage(img)}
-                                    className={`border-2 rounded-lg overflow-hidden ${
-                                        selectedImage === img
+                                    className={`border-2 rounded-lg overflow-hidden ${selectedImage === img
                                             ? "border-[#D4AF37]"
                                             : "border-gray-200"
-                                    }`}
+                                        }`}
                                 >
                                     <img
                                         src={img}
