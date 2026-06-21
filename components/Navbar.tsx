@@ -33,9 +33,31 @@ export default function Navbar() {
                     </p>
 
                     <div className="flex items-center gap-5 text-lg">
-                        <FaInstagram className="hover:text-[#D4AF37] transition cursor-pointer" />
-                        <FaFacebookF className="hover:text-[#D4AF37] transition cursor-pointer" />
-                        <FaWhatsapp className="hover:text-[#D4AF37] transition cursor-pointer" />
+
+                        <a
+                            href="https://www.instagram.com/nomark_curtains?igsh=bTBsNzVkamRmNXZ3"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <FaInstagram className="hover:text-[#D4AF37] transition cursor-pointer" />
+                        </a>
+
+                        <a
+                            href="https://www.facebook.com/share/18qMbLUQow/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <FaFacebookF className="hover:text-[#D4AF37] transition cursor-pointer" />
+                        </a>
+
+                        <a
+                            href="https://wa.me/254724174801"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <FaWhatsapp className="hover:text-[#D4AF37] transition cursor-pointer" />
+                        </a>
+
                     </div>
 
                 </div>

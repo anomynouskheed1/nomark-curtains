@@ -47,7 +47,7 @@ export default function Footer() {
                             Nairobi, Kenya
                         </p>
                         <p className="text-gray-400 text-sm mt-2">
-                            +254 700 000 000
+                            724 174 801
                         </p>
                         <p className="text-gray-400 text-sm mt-2">
                             nomarccurtains@gmail.com
@@ -55,7 +55,7 @@ export default function Footer() {
 
                         {/* WhatsApp CTA */}
                         <a
-                            href="https://wa.me/254700000000"
+                            href="https://wa.me/0724 174 801"
                             target="_blank"
                             className="inline-block mt-4 px-4 py-2 bg-green-500 text-white rounded-lg text-sm hover:bg-green-600 transition"
                         >

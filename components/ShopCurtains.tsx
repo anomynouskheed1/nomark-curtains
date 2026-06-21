@@ -2,237 +2,249 @@
 
 import { useState } from "react";
 
-const products = [
-    {
-        title: "Arabic Gold Brown Curtains",
-        category: "Luxury",
-        description:
-            "Elegant Arabic-inspired gold and brown curtains designed to bring a rich, royal, and luxurious atmosphere to your interior spaces.",
-        images: [
-            "/images/products/set1-1.jpg",
-            "/images/products/set1-2.jpg",
-            "/images/products/set1-3.jpg",
-            "/images/products/set1-4.jpg",
-        ],
-    },
-    {
-        title: "Heavy Blue Curtains",
-        category: "Heavy Drapes",
-        description:
-            "Thick bluish heavy curtains designed for maximum privacy, light blocking, and a premium cozy interior feel.",
-        images: [
-            "/images/products/set2-1.jpg",
-            "/images/products/set2-2.jpg",
-            "/images/products/set2-3.jpg",
-            "/images/products/set2-4.jpg",
-        ],
-    },
-    {
-        title: "Elegant Grey Curtains",
-        category: "Modern",
-        description:
-            "Soft grey curtains offering a minimal, modern, and stylish look that blends perfectly with contemporary interiors.",
-        images: [
-            "/images/products/set3-1.jpg",
-            "/images/products/set3-2.jpg",
-            "/images/products/set3-3.jpg",
-            "/images/products/set3-4.jpg",
-        ],
-    },
-    {
-        title: "Golden Yellow Curtains",
-        category: "Bright Decor",
-        description:
-            "Warm yellow-toned curtains that brighten your space while adding a stylish and welcoming interior atmosphere.",
-        images: [
-            "/images/products/set4-1.jpg",
-            "/images/products/set4-2.jpg",
-            "/images/products/set4-3.jpg",
-            "/images/products/set4-4.jpg",
-        ],
-    },
-    {
-        title: "Deep Dark Blue Curtains",
-        category: "Premium",
-        description:
-            "Rich dark blue curtains that bring depth, elegance, and a luxurious hotel-style finish to any room.",
-        images: [
-            "/images/products/set5-1.jpg",
-            "/images/products/set5-2.jpg",
-            "/images/products/set5-3.jpg",
-            "/images/products/set5-4.jpg",
-        ],
-    },
-    {
-        title: "Grey & Gold Luxury Curtains",
-        category: "Luxury",
-        description:
-            "Stylish grey curtains enhanced with golden accents on top, creating a premium and sophisticated interior design feel.",
-        images: [
-            "/images/products/set6-1.jpg",
-            "/images/products/set6-2.jpg",
-            "/images/products/set6-3.jpg",
-            "/images/products/set6-4.jpg",
-        ],
-    },
-    {
-        title: "Curtain Rods & Rails",
-        category: "Rods",
-        description:
-            "Strong and durable curtain rods and rail systems designed for smooth movement and a clean, modern interior installation finish.",
-        images: [
-            "/images/products/set7-1.jpg",
-            "/images/products/set7-2.jpg",
-            "/images/products/set7-3.jpg",
-            "/images/products/set7-4.jpg",
-        ],
-    },
-    {
-        title: "Premium Sheer Curtains",
-        category: "Sheer",
-        description:
-            "Light and elegant sheer curtains that softly filter sunlight while maintaining privacy and a bright airy atmosphere.",
-        images: [
-            "/images/products/set8-1.jpg",
-            "/images/products/set8-2.jpg",
-            "/images/products/set8-3.jpg",
-            "/images/products/set8-4.jpg",
-        ],
-    },
-];
-
 export default function ShopCurtains() {
-    const [activeFilter, setActiveFilter] = useState("All");
+    const [selectedProduct, setSelectedProduct] = useState(null);
 
-    const filters = [
-        "All",
-        "Blackout",
-        "Sheer",
-        "Wave",
-        "Motorized",
+    const products = [
+        {
+            title: "Luxury Blackout Curtains",
+            description:
+                "Premium blackout curtains designed for privacy, comfort, and complete light control.",
+            size: "Custom Sizes Available",
+            images: [
+                "/images/products/set1-1.jpg",
+                "/images/products/set1-2.jpg",
+                "/images/products/set1-3.jpg",
+                "/images/products/set1-4.jpg",
+            ],
+        },
+        {
+            title: "Premium Sheer Curtains",
+            description:
+                "Elegant sheer curtains that allow natural light while maintaining privacy.",
+            size: "Custom Sizes Available",
+            images: [
+                "/images/products/set2-1.jpg",
+                "/images/products/set2-2.jpg",
+                "/images/products/set2-3.jpg",
+                "/images/products/set2-4.jpg",
+            ],
+        },
+        {
+            title: "Double Layer Curtains",
+            description:
+                "A perfect combination of blackout and sheer curtains for maximum flexibility.",
+            size: "Custom Sizes Available",
+            images: [
+                "/images/products/set3-1.jpg",
+                "/images/products/set3-2.jpg",
+                "/images/products/set3-3.jpg",
+                "/images/products/set3-4.jpg",
+            ],
+        },
+        {
+            title: "Wave Curtains",
+            description:
+                "Modern wave-style curtains that create a luxurious and elegant finish.",
+            size: "Custom Sizes Available",
+            images: [
+                "/images/products/set4-1.jpg",
+                "/images/products/set4-2.jpg",
+                "/images/products/set4-3.jpg",
+                "/images/products/set4-4.jpg",
+            ],
+        },
+        {
+            title: "Motorized Curtains",
+            description:
+                "Smart remote-controlled curtains suitable for modern homes and offices.",
+            size: "Custom Sizes Available",
+            images: [
+                "/images/products/set5-1.jpg",
+                "/images/products/set5-2.jpg",
+                "/images/products/set5-3.jpg",
+                "/images/products/set5-4.jpg",
+            ],
+        },
     ];
 
-    const filteredProducts =
-        activeFilter === "All"
-            ? products
-            : products.filter(
-                (product) => product.category === activeFilter
-            );
-
     return (
-        <section id="products" className="py-24 bg-gray-50">
+        <section id="shop" className="py-24 bg-white">
             <div className="max-w-7xl mx-auto px-6">
 
-                <div className="text-center mb-12">
-
+                {/* HEADER */}
+                <div className="text-center mb-16">
                     <span className="text-[#D4AF37] font-semibold uppercase tracking-widest">
                         Shop Curtains
                     </span>
 
-                    <h2 className="text-4xl font-bold text-[#0A1A35] mt-3">
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#0A1A35] mt-3">
                         Premium Curtain Collection
                     </h2>
 
-                    <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-                        Explore our curtain styles and request a free quote directly on WhatsApp.
+                    <p className="text-gray-600 max-w-2xl mx-auto mt-4">
+                        Explore our premium curtain styles and request a quote directly through WhatsApp.
                     </p>
-
                 </div>
 
-                {/* FILTERS */}
-                <div className="flex flex-wrap justify-center gap-3 mb-12">
+                {/* GRID (FIXED ALIGNMENT) */}
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                    {filters.map((filter) => (
-                        <button
-                            key={filter}
-                            onClick={() => setActiveFilter(filter)}
-                            className={`px-5 py-2 rounded-full text-sm font-medium transition ${activeFilter === filter
-                                ? "bg-[#0A1A35] text-white"
-                                : "bg-white border hover:border-[#D4AF37]"
-                                }`}
-                        >
-                            {filter}
-                        </button>
-                    ))}
-
-                </div>
-
-                {/* PRODUCTS */}
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
-
-                    {filteredProducts.map((product, index) => (
+                    {products.map((product, index) => (
                         <ProductCard
                             key={index}
                             product={product}
+                            onView={() => setSelectedProduct(product)}
                         />
                     ))}
 
                 </div>
 
             </div>
+
+            {/* MODAL */}
+            {selectedProduct && (
+                <ProductModal
+                    product={selectedProduct}
+                    onClose={() => setSelectedProduct(null)}
+                />
+            )}
         </section>
     );
 }
 
-function ProductCard({ product }: any) {
-    const [mainImage, setMainImage] = useState(product.images[0]);
+/* ---------------- PRODUCT CARD ---------------- */
 
+function ProductCard({ product, onView }) {
     return (
-        <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+        <div className="bg-gray-50 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
 
-            <h3 className="px-4 pt-4 text-lg font-bold text-[#0A1A35] min-h-[56px]">
-                {product.title}
-            </h3>
-
-            <div className="p-4">
-
+            <div className="overflow-hidden">
                 <img
-                    src={mainImage}
+                    src={product.images[0]}
                     alt={product.title}
-                    className="w-full h-56 object-cover rounded-xl"
+                    className="w-full h-72 object-cover hover:scale-105 transition duration-500"
                 />
+            </div>
 
-                <div className="grid grid-cols-4 gap-2 mt-3">
+            <div className="p-6">
 
-                    {product.images.map((image: string, idx: number) => (
-                        <button
-                            key={idx}
-                            onClick={() => setMainImage(image)}
-                            className={`rounded overflow-hidden border-2 ${mainImage === image
-                                ? "border-[#D4AF37]"
-                                : "border-transparent"
-                                }`}
-                        >
-                            <img
-                                src={image}
-                                alt=""
-                                className="w-full h-14 object-cover"
-                            />
-                        </button>
-                    ))}
+                <span className="inline-block bg-[#D4AF37]/10 text-[#D4AF37] px-3 py-1 rounded-full text-sm font-semibold mb-3">
+                    Premium Collection
+                </span>
 
-                </div>
+                <h3 className="text-xl font-bold text-[#0A1A35]">
+                    {product.title}
+                </h3>
 
-                <p className="text-gray-600 text-sm mt-4 leading-relaxed">
+                <p className="text-gray-600 mt-2 text-sm line-clamp-2">
                     {product.description}
                 </p>
 
-                <ul className="text-sm text-gray-600 mt-4 space-y-1">
-                    <li>✓ Custom Sizes Available</li>
-                    <li>✓ Multiple Color Options</li>
-                    <li>✓ Professional Installation</li>
-                </ul>
-
-                <a
-                    href={`https://wa.me/254724174801?text=${encodeURIComponent(
-                        `Hello Nomark Curtains, I am interested in ${product.title}.`
-                    )}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block text-center mt-5 bg-[#D4AF37] text-black py-3 rounded-lg font-semibold hover:opacity-90 transition"
+                <button
+                    onClick={onView}
+                    className="mt-5 w-full bg-[#0A1A35] text-white py-3 rounded-lg hover:bg-[#D4AF37] hover:text-black transition"
                 >
-                    Get Quote
-                </a>
+                    View Collection
+                </button>
+
+            </div>
+
+        </div>
+    );
+}
+
+/* ---------------- MODAL ---------------- */
+
+function ProductModal({ product, onClose }) {
+    const [selectedImage, setSelectedImage] = useState(product.images[0]);
+
+    return (
+        <div className="fixed inset-0 bg-black/70 z-[9999] flex items-center justify-center p-4">
+
+            <div className="bg-white rounded-3xl max-w-6xl w-full max-h-[90vh] overflow-y-auto relative">
+
+                {/* CLOSE */}
+                <button
+                    onClick={onClose}
+                    className="absolute right-4 top-4 text-3xl font-bold text-gray-600 hover:text-black"
+                >
+                    ×
+                </button>
+
+                <div className="grid lg:grid-cols-2 gap-8 p-6">
+
+                    {/* IMAGES */}
+                    <div>
+
+                        <img
+                            src={selectedImage}
+                            alt={product.title}
+                            className="w-full h-[450px] object-cover rounded-2xl"
+                        />
+
+                        <div className="grid grid-cols-4 gap-3 mt-4">
+
+                            {product.images.map((img, idx) => (
+                                <button
+                                    key={idx}
+                                    onClick={() => setSelectedImage(img)}
+                                    className={`border-2 rounded-lg overflow-hidden ${
+                                        selectedImage === img
+                                            ? "border-[#D4AF37]"
+                                            : "border-gray-200"
+                                    }`}
+                                >
+                                    <img
+                                        src={img}
+                                        className="w-full h-20 object-cover"
+                                    />
+                                </button>
+                            ))}
+
+                        </div>
+
+                    </div>
+
+                    {/* CONTENT */}
+                    <div>
+
+                        <span className="inline-block bg-[#D4AF37]/10 text-[#D4AF37] px-3 py-1 rounded-full text-sm font-semibold">
+                            Premium Collection
+                        </span>
+
+                        <h2 className="text-3xl font-bold text-[#0A1A35] mt-4">
+                            {product.title}
+                        </h2>
+
+                        <p className="text-gray-600 mt-5">
+                            {product.description}
+                        </p>
+
+                        <div className="mt-6 space-y-3 text-sm text-gray-700">
+
+                            <p>✓ Custom Sizes Available</p>
+                            <p>✓ Multiple Color Options</p>
+                            <p>✓ Professional Installation</p>
+                            <p>✓ Premium Fabric Quality</p>
+                            <p>✓ Free Site Measurement</p>
+
+                        </div>
+
+                        <a
+                            href={`https://wa.me/254724174801?text=${encodeURIComponent(
+                                `Hello Nomark Curtains, I am interested in ${product.title}.`
+                            )}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block mt-8 bg-[#D4AF37] text-black px-8 py-4 rounded-xl font-semibold hover:opacity-90 transition"
+                        >
+                            Order on WhatsApp
+                        </a>
+
+                    </div>
+
+                </div>
 
             </div>
 
