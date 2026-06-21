@@ -2,10 +2,27 @@
 
 import { useState } from "react";
 
-export default function ShopCurtains() {
-    const [selectedProduct, setSelectedProduct] = useState<any>(null);
+type Product = {
+    title: string;
+    description: string;
+    size: string;
+    images: string[];
+};
 
-    const products = [
+type ProductCardProps = {
+    product: Product;
+    onView: () => void;
+};
+
+type ProductModalProps = {
+    product: Product;
+    onClose: () => void;
+};
+
+export default function ShopCurtains() {
+    const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+
+    const products: Product[] = [
         {
             title: "Luxury Blackout Curtains",
             description:
@@ -69,10 +86,9 @@ export default function ShopCurtains() {
     ];
 
     return (
-        <section id="shop" className="py-24 bg-white">
+        <section id="products" className="py-24 bg-white">
             <div className="max-w-7xl mx-auto px-6">
 
-                {/* HEADER */}
                 <div className="text-center mb-16">
                     <span className="text-[#D4AF37] font-semibold uppercase tracking-widest">
                         Shop Curtains
@@ -87,9 +103,7 @@ export default function ShopCurtains() {
                     </p>
                 </div>
 
-                {/* GRID (FIXED ALIGNMENT) */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
                     {products.map((product, index) => (
                         <ProductCard
                             key={index}
@@ -97,12 +111,10 @@ export default function ShopCurtains() {
                             onView={() => setSelectedProduct(product)}
                         />
                     ))}
-
                 </div>
 
             </div>
 
-            {/* MODAL */}
             {selectedProduct && (
                 <ProductModal
                     product={selectedProduct}
@@ -113,9 +125,7 @@ export default function ShopCurtains() {
     );
 }
 
-/* ---------------- PRODUCT CARD ---------------- */
-
-function ProductCard({ product, onView }) {
+function ProductCard({ product, onView }: ProductCardProps) {
     return (
         <div className="bg-gray-50 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
 
@@ -154,17 +164,16 @@ function ProductCard({ product, onView }) {
     );
 }
 
-/* ---------------- MODAL ---------------- */
-
-function ProductModal({ product, onClose }) {
-    const [selectedImage, setSelectedImage] = useState(product.images[0]);
+function ProductModal({ product, onClose }: ProductModalProps) {
+    const [selectedImage, setSelectedImage] = useState<string>(
+        product.images[0]
+    );
 
     return (
         <div className="fixed inset-0 bg-black/70 z-[9999] flex items-center justify-center p-4">
 
             <div className="bg-white rounded-3xl max-w-6xl w-full max-h-[90vh] overflow-y-auto relative">
 
-                {/* CLOSE */}
                 <button
                     onClick={onClose}
                     className="absolute right-4 top-4 text-3xl font-bold text-gray-600 hover:text-black"
@@ -174,7 +183,6 @@ function ProductModal({ product, onClose }) {
 
                 <div className="grid lg:grid-cols-2 gap-8 p-6">
 
-                    {/* IMAGES */}
                     <div>
 
                         <img
@@ -196,6 +204,7 @@ function ProductModal({ product, onClose }) {
                                 >
                                     <img
                                         src={img}
+                                        alt={`${product.title} ${idx + 1}`}
                                         className="w-full h-20 object-cover"
                                     />
                                 </button>
@@ -205,7 +214,6 @@ function ProductModal({ product, onClose }) {
 
                     </div>
 
-                    {/* CONTENT */}
                     <div>
 
                         <span className="inline-block bg-[#D4AF37]/10 text-[#D4AF37] px-3 py-1 rounded-full text-sm font-semibold">
@@ -221,13 +229,11 @@ function ProductModal({ product, onClose }) {
                         </p>
 
                         <div className="mt-6 space-y-3 text-sm text-gray-700">
-
                             <p>✓ Custom Sizes Available</p>
                             <p>✓ Multiple Color Options</p>
                             <p>✓ Professional Installation</p>
                             <p>✓ Premium Fabric Quality</p>
                             <p>✓ Free Site Measurement</p>
-
                         </div>
 
                         <a
