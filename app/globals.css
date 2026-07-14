@@ -133,7 +133,7 @@ html {
     0 1px 3px rgba(0, 0, 0, 0.04),
     0 8px 30px rgba(0, 0, 0, 0.06);
   transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
-              box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1);
   animation: shopCardIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
   animation-delay: var(--delay, 0s);
   border: 1px solid rgba(0, 0, 0, 0.04);
@@ -151,6 +151,7 @@ html {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -178,11 +179,9 @@ html {
 .shop-card__image-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    transparent 50%,
-    rgba(10, 26, 53, 0.15) 100%
-  );
+  background: linear-gradient(to bottom,
+      transparent 50%,
+      rgba(10, 26, 53, 0.15) 100%);
   transition: opacity 0.4s ease;
 }
 
@@ -325,4 +324,49 @@ html {
   .shop-subtitle {
     font-size: 0.95rem;
   }
+}
+
+/* Add to globals.css if needed for category filter bar hidden scrollbars */
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Optional high-end keyframe animation tracking variables */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scale-up {
+  animation: scaleUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }

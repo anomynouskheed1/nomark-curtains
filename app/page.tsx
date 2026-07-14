@@ -1,21 +1,23 @@
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import ShopCurtains from "@/components/ShopCurtains";
-import Collections from "@/components/Collections";
-import Projects from "@/components/Projects";
-import About from "@/components/About";
-import Testimonials from "@/components/Testimonials";
+
+import AnnouncementBar from "@/components/layout/AnnouncementBar";
+import Navbar from "@/components/layout/Navbar";
+import Hero from "@/components/home/Hero";
+import ShopCurtains from "@/components/home/ShopCurtains";
+import Collections from "@/components/home/Collections";
+import Projects from "@/components/home/Projects";
+import About from "@/components/home/About";
+import Testimonials from "@/components/home/Testimonials";
 import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import WhatsAppButton from "@/components/WhatsAppButton";
+import Footer from "@/components/layout/Footer";
+import WhatsAppButton from "@/components/common/WhatsAppButton";
 
 export default function Home() {
   return (
     <>
+
+      <AnnouncementBar />
       <Navbar />
-
       <Hero />
-
       {/* MONEY SECTION 💰 */}
       <ShopCurtains />
 
