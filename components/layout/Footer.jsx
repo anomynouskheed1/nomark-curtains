@@ -14,7 +14,7 @@ export default function Footer() {
                     {/* COLUMN 1: BRAND ARCHETYPE */}
                     <div className="space-y-4">
                         <h2 className="text-xl font-serif font-light tracking-wide text-white">
-                            Nomark Curtains
+                            Arafat designer Curtains
                         </h2>
                         <p className="text-white/60 text-xs md:text-sm font-light tracking-wide leading-relaxed max-w-sm mx-auto md:mx-0">
                             Elegant custom curtains crafted for homes, apartments, offices and hotels across Kenya.
@@ -71,10 +71,10 @@ export default function Footer() {
                                 <p>Eastleigh-Nairobi, Kenya</p>
                                 <p className="tracking-widest">0724 174 801</p>
                                 <a
-                                    href="mailto:nomarkcurtains@gmail.com"
+                                    href="mailto:Arafat designercurtains@gmail.com"
                                     className="block hover:text-[#D4AF37] transition-colors duration-300"
                                 >
-                                    nomarkcurtains@gmail.com
+                                    Arafat designercurtains@gmail.com
                                 </a>
                             </div>
                         </div>
@@ -108,7 +108,7 @@ export default function Footer() {
                 {/* ── BOTTOM SECTION: EDITORIAL DIVIDER & COPYRIGHT ── */}
                 <div className="border-t border-white/5 mt-16 pt-8">
                     <p className="text-center text-[11px] font-light tracking-widest text-white/40">
-                        &copy; 2026 Nomark Curtains. All Rights Reserved.
+                        &copy; 2026 Arafat designer Curtains. All Rights Reserved.
                     </p>
                 </div>
 

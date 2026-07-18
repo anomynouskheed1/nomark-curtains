@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const slides = [
     {
         image: "/images/curtain-hero1.jpg",
-        heading: "Welcome to Nomark Curtains",
+        heading: "Welcome to Arafat designer Curtains",
         subtext: "Elegant window décor crafted to transform every space into something beautiful.",
     },
     {
@@ -63,8 +63,8 @@ export default function Hero() {
                         <div
                             key={`text-${i}`}
                             className={`absolute flex flex-col items-center justify-center transition-all duration-[1200ms] ease-out ${isActive
-                                    ? "opacity-100 translate-y-0 scale-100 pointer-events-auto"
-                                    : "opacity-0 translate-y-4 scale-95 pointer-events-none"
+                                ? "opacity-100 translate-y-0 scale-100 pointer-events-auto"
+                                : "opacity-0 translate-y-4 scale-95 pointer-events-none"
                                 }`}
                         >
                             {/* Main Elegant Heading on Top */}

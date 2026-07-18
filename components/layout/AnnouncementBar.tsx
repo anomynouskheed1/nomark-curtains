@@ -35,7 +35,7 @@ export default function AnnouncementBar() {
                 <div className="flex items-center gap-3 ml-auto shrink-0">
 
                     <a
-                        href="tel:+254724174801"
+                        href="tel:+25421163223"
                         className="hidden sm:flex items-center gap-1.5 text-[#D4AF37] font-semibold hover:text-white transition-colors duration-300"
                     >
                         <FaPhoneAlt className="text-[10px]" />

@@ -72,7 +72,7 @@ export default function Contact() {
                         {/* Refined WhatsApp Button */}
                         <div className="pt-2">
                             <a
-                                href="https://wa.me/254724174801"
+                                href="https://wa.me/25421163223"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center justify-center gap-2.5 border border-white/10 hover:border-[#D4AF37] text-white hover:text-[#D4AF37] px-6 py-3 rounded-xl font-sans text-xs uppercase tracking-wider font-medium transition-all duration-300 w-full md:w-auto"
@@ -116,7 +116,7 @@ export default function Contact() {
                             <div className="pt-3">
                                 <button
                                     type="button"
-                                    onClick={() => window.open("https://wa.me/254724174801", "_blank")}
+                                    onClick={() => window.open("https://wa.me/25421163223", "_blank")}
                                     className="w-full group flex items-center justify-center gap-2 bg-[#D4AF37] hover:bg-[#c9a227] text-[#0A1A35] py-3 rounded-lg font-semibold tracking-wider text-xs uppercase transition-all duration-300 shadow-md"
                                 >
                                     Send Request via WhatsApp

@@ -7,7 +7,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 export default function Products() {
-    const waLink = "https://wa.me/254724174801";
+    const waLink = "https://wa.me/25421163223";
 
     const products = [
         {
