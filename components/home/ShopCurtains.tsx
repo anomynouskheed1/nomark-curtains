@@ -208,7 +208,7 @@ const COLLECTIONS_DATA: ProductCollection[] = [
         colorsCount: 8,
         features: ["Whisper-Drive Motor Matrix", "Voice & App Smart Sync", "Manual Pull Override"],
         size: "Tracks Extensible up to 12m",
-        fabricInfo: "Compatible with all Arafat designer Premium Drapery Weights",
+        fabricInfo: "Compatible with all Nomark  Premium Drapery Weights",
         images: [
             "https://s.alicdn.com/@sc04/kf/H06290eb84de742019ee9c95932cbc2d5X.jpg_300x300.jpg",
             "https://s.alicdn.com/@sc04/kf/Hed92c1fda61446dfa45f60737144d58dI.jpg_300x300.jpg",
@@ -417,7 +417,7 @@ export default function ShopCurtains() {
                 {/* --- Premium Section Header --- */}
                 <div className="text-center mb-20 max-w-3xl mx-auto flex flex-col items-center">
                     <span className="text-[#D4AF37] text-xs sm:text-sm font-medium uppercase tracking-[0.3em] block animate-fade-in">
-                        Arafat designer Showroom
+                        Nomark  Showroom
                     </span>
                     <h2 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-light text-[#0A1A35] mt-4 tracking-tight leading-tight">
                         Premium Curtain Collections
@@ -714,7 +714,7 @@ function ProductModal({ product, onClose }: { product: ProductCollection; onClos
 
                             <div className="grid grid-cols-1 gap-1.5 text-xs text-gray-500 font-light pt-2">
                                 <div className="flex items-center gap-2">
-                                    <span className="text-[#D4AF37] font-bold">✓</span> Free designer site measurement & consultation
+                                    <span className="text-[#D4AF37] font-bold">✓</span> Free  site measurement & consultation
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <span className="text-[#D4AF37] font-bold">✓</span> Professional white-glove track installation included
@@ -729,8 +729,8 @@ function ProductModal({ product, onClose }: { product: ProductCollection; onClos
                     {/* Interactive Trigger Systems Area (Preserves target links intact) */}
                     <div className="mt-8 space-y-3">
                         <a
-                            href={`https://wa.me/25421163223?text=${encodeURIComponent(
-                                `Hello Arafat designer Curtains, I am exploring your digital showroom collection and would love to get a premium quote for the "${product.title}" (${product.badge}). Please share availability for a custom site measurement.`
+                            href={`https://wa.me/254724174801?text=${encodeURIComponent(
+                                `Hello Nomark  Curtains, I am exploring your digital showroom collection and would love to get a premium quote for the "${product.title}" (${product.badge}). Please share availability for a custom site measurement.`
                             )}`}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -741,7 +741,7 @@ function ProductModal({ product, onClose }: { product: ProductCollection; onClos
 
                         <div className="grid grid-cols-2 gap-3">
                             <a
-                                href="tel:+25421163223"
+                                href="tel:+254724174801"
                                 className="flex items-center justify-center border border-[#0A1A35] text-[#0A1A35] font-semibold uppercase tracking-wider text-[11px] py-3.5 hover:bg-[#0A1A35] hover:text-white transition-all duration-300 text-center"
                             >
                                 Call Design Desk

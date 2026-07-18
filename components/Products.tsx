@@ -7,7 +7,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 export default function Products() {
-    const waLink = "https://wa.me/25421163223";
+    const waLink = "https://wa.me/254724174801";
 
     const products = [
         {
@@ -27,7 +27,7 @@ export default function Products() {
         },
         {
             image: "/images/service7.jpg",
-            title: "Designer Curtains",
+            title: " Curtains",
             desc: "Custom-made curtain designs to match your interior décor."
         },
         {

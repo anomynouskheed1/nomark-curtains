@@ -53,7 +53,7 @@ export default function Navbar() {
                         <div className="relative w-11 h-11 transition-transform duration-300 hover:scale-105">
                             <Image
                                 src="/images/logo.jpg"
-                                alt="Arafat designer Curtains Corporate Badge"
+                                alt="Nomark  Curtains Corporate Badge"
                                 fill
                                 priority
                                 className="object-cover rounded-none"
@@ -61,7 +61,7 @@ export default function Navbar() {
                         </div>
                         <div className="flex flex-col">
                             <span className="font-serif font-light text-xl tracking-wide uppercase leading-none text-[#0A1A35]">
-                                Arafat designer
+                                Nomark
                             </span>
                             <span className="text-[9px] text-[#D4AF37] tracking-[0.35em] uppercase font-semibold mt-1 block pl-[1px]">
                                 Curtains
@@ -97,11 +97,11 @@ export default function Navbar() {
                     {/* Desktop Socials */}
                     <div className="hidden lg:flex items-center gap-6 pl-4 z-50">
                         <a
-                            href="https://www.instagram.com/Arafat designer_curtains"
+                            href="https://www.instagram.com/Nomark _curtains"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-[#0A1A35]/60 hover:text-[#D4AF37] text-sm transition-colors duration-300 p-1"
-                            aria-label="Follow Arafat designer Curtains on Instagram"
+                            aria-label="Follow Nomark  Curtains on Instagram"
                         >
                             <FaInstagram />
                         </a>
@@ -110,7 +110,7 @@ export default function Navbar() {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-[#0A1A35]/60 hover:text-[#D4AF37] text-sm transition-colors duration-300 p-1"
-                            aria-label="Follow Arafat designer Curtains on Facebook"
+                            aria-label="Follow Nomark  Curtains on Facebook"
                         >
                             <FaFacebookF />
                         </a>
@@ -176,7 +176,7 @@ export default function Navbar() {
                     </span>
                     <div className="flex items-center gap-6">
                         <a
-                            href="https://www.instagram.com/Arafat designer_curtains"
+                            href="https://www.instagram.com/Nomark _curtains"
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => setOpen(false)}

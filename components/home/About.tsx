@@ -29,7 +29,7 @@ export default function About() {
                         </h3>
 
                         <p className="text-gray-600 leading-relaxed mb-6">
-                            Arafat designer Curtains is a trusted curtain company based in Kenya,
+                            Nomark  Curtains is a trusted curtain company based in Kenya,
                             specializing in premium curtain design, supply,
                             measurement, and professional installation services.
                             We help transform ordinary spaces into elegant,
@@ -96,7 +96,7 @@ export default function About() {
                         <div className="overflow-hidden rounded-2xl shadow-2xl">
                             <img
                                 src="/images/about.jpg"
-                                alt="Arafat designer Curtains"
+                                alt="Nomark  Curtains"
                                 className="w-full h-[500px] object-cover hover:scale-105 transition duration-700"
                             />
                         </div>

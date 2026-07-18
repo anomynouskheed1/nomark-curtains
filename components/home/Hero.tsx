@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const slides = [
     {
         image: "/images/curtain-hero1.jpg",
-        heading: "Welcome to Arafat designer Curtains",
+        heading: "Welcome to Nomark  Curtains",
         subtext: "Elegant window décor crafted to transform every space into something beautiful.",
     },
     {
